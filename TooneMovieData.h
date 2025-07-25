@@ -2,21 +2,22 @@
 #define TOONEMOVIEDATA_H
 
 #include "pch.h"
+#include <string> // 包含 string 头文件
 
 class TooneMovieData {
 public:
     TooneMovieData();
     ~TooneMovieData();
 
+    // 只保留一个 GetMovieName 函数声明
+    const std::string& GetMovieName() const;
     void SetMovieName(std::string movieName);
-    std::string GetMovieName();
 
     void SetDirector(std::string director);
-    std::string GetDirector();
-
-    void GetMovieName(const std::string & string);
+    const std::string& GetDirector() const;
 
     void SetID(const std::string& id);
+    const std::string& GetID() const;
 
 private:
     std::string m_id;

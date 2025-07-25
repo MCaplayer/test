@@ -1,6 +1,3 @@
-//
-// Created by pengjw on 25-7-22.
-//
 
 #ifndef TOONEUSERMANAGER_H
 #define TOONEUSERMANAGER_H

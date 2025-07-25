@@ -8,6 +8,7 @@
 #include <list>
 #include <format>
 #include <sstream>
+#include <ranges>
 #ifdef _WIN32
 #include <windows.h>
 

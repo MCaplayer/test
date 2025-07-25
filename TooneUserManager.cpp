@@ -1,9 +1,6 @@
 #include "pch.h"
 #include "TooneUserManager.h"
 
-#include <ranges>
-
-
 TooneUserManager::TooneUserManager()
 {
 }

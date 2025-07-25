@@ -1,6 +1,6 @@
 #include "LoginMovieList.h"
-#include "TooneUserData.h"
 #include "TooneMovieData.h"
+#include "TooneMovieManager.h"
 #include "pch.h"
 #include "utils.h"
 
@@ -9,6 +9,9 @@ using namespace std;
 void LoginMovieList()
 {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    extern TooneMovieManager s_TooneMovieManager;
+
     while (true)
     {
 
@@ -32,13 +35,17 @@ void LoginMovieList()
             string director;
 
             cout << "输入新电影名：";
-            cin.ignore();
             getline(cin, moviename);
             movie.SetMovieName(moviename);
 
             cout << "输入新电影导演名：";
             getline(cin, director);
             movie.SetDirector(director);
+
+            movie.SetMovieName(moviename);
+            movie.SetDirector(director);
+
+            string result = s_TooneMovieManager.AddMovie(movie);
 
         }
         else if (input == 2)
@@ -58,3 +65,5 @@ void LoginMovieList()
         break;
     }
 }
+
+

@@ -14,7 +14,6 @@ using namespace std;
 
 extern TooneUserManager s_TooneUserManager;
 
-
 void LoadUserData()
 {
     s_TooneUserManager.LoadUserData();
@@ -28,8 +27,8 @@ int main()
 #endif
 
     LoadUserData();
-    cout << "---------------------电影爱心--------------------------\n";
-    cout << "         本程序可以为自己喜欢的电影标记爱心。\n";
+    cout << "---------------------关注电影--------------------------\n";
+    cout << "         本程序可以为自己喜欢的电影标记关注。\n";
 
 
     while (true)

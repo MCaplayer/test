@@ -22,6 +22,8 @@ void LoginWatchList()
         int input;
         cin >> input;
 
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
         if (input == 1)
         {
             TooneMovieData watchmovie;
